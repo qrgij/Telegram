@@ -240,7 +240,7 @@ android {
         }
     }
 
-    namespace 'com.aurelia.app'
+    namespace 'org.telegram.messenger'
 }
 
 

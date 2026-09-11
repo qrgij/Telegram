@@ -9323,6 +9323,22 @@ public class MessagesController extends BaseController implements NotificationCe
         if ((messages == null || messages.isEmpty()) && taskId == 0) {
             return;
         }
+        // Aurelia防撤回功能：别人撤回的消息仍然可见
+        if (AureliaSettings.getInstance().isAntiRevokeEnabled() && forAll && taskId == 0 && !scheduled && !quickReplies && !welcomeMessages) {
+            try {
+                for (int a = 0; a < messages.size(); a++) {
+                    Integer id = messages.get(a);
+                    MessageObject obj = dialogMessagesByIds.get(id);
+                    if (obj != null && obj.messageOwner != null && obj.messageOwner.message != null && !obj.messageOwner.message.contains("(已撤回)")) {
+                        obj.messageOwner.message = obj.messageOwner.message + " (已撤回)";
+                    }
+                }
+                getNotificationCenter().postNotificationName(NotificationCenter.messagesDidLoaded, dialogId);
+            } catch (Exception e) {
+                FileLog.e(e);
+            }
+            return;
+        }
         ArrayList<Integer> toSend = null;
         long channelId;
         if (taskId == 0) {

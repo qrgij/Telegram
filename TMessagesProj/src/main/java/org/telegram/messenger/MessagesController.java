@@ -9333,7 +9333,7 @@ public class MessagesController extends BaseController implements NotificationCe
                         obj.messageOwner.message = obj.messageOwner.message + " (已撤回)";
                     }
                 }
-                getNotificationCenter().postNotificationName(NotificationCenter.messagesDidLoaded, dialogId);
+                // 防撤回功能：不发送通知，只修改消息内容
             } catch (Exception e) {
                 FileLog.e(e);
             }

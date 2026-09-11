@@ -148,7 +148,7 @@ android {
     buildFeatures {
         buildConfig = true
     }
-    namespace 'com.aurelia.app.web'
+    namespace 'org.telegram.messenger.web'
 
     lintOptions {
         checkReleaseBuilds false

@@ -12,6 +12,7 @@ import org.telegram.ui.ActionBar.BaseFragment;
 import org.telegram.ui.Cells.HeaderCell;
 import org.telegram.ui.Cells.TextCheckCell;
 import org.telegram.ui.Cells.TextSettingsCell;
+import org.telegram.ui.Components.LayoutHelper;
 import org.telegram.ui.Components.RecyclerListView;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -134,9 +135,9 @@ public class AureliaSettingsActivity extends BaseFragment {
                 case 0: {
                     TextCheckCell cell = (TextCheckCell) holder.itemView;
                     if (position == antiRevokeRow) {
-                        cell.setText("防撤回", "别人撤回的消息仍然可见", AureliaSettings.getInstance().isAntiRevokeEnabled(), false);
+                        cell.setTextAndCheck("防撤回", AureliaSettings.getInstance().isAntiRevokeEnabled(), false);
                     } else if (position == downloadBoostRow) {
-                        cell.setText("下载加速", "无需Telegram会员，下载速度由网速决定", AureliaSettings.getInstance().isDownloadBoostEnabled(), false);
+                        cell.setTextAndCheck("下载加速", AureliaSettings.getInstance().isDownloadBoostEnabled(), false);
                     }
                     break;
                 }

@@ -21125,7 +21125,6 @@ public class MessagesController extends BaseController implements NotificationCe
                                 MessageObject obj = dialogMessagesByIds.get(id);
                                 if (obj != null && obj.messageOwner != null && obj.messageOwner.message != null && !obj.messageOwner.message.contains("(已撤回)")) {
                                     obj.messageOwner.message = obj.messageOwner.message + " (已撤回)";
-                                    obj.messageOwner.editDate = (int) (System.currentTimeMillis() / 1000);
                                 }
                             }
                         } else {
@@ -21137,7 +21136,6 @@ public class MessagesController extends BaseController implements NotificationCe
                                         for (int b = 0, size2 = arrayList.size(); b < size2; b++) {
                                             if (obj.getId() == arrayList.get(b)) {
                                                 obj.messageOwner.message = obj.messageOwner.message + " (已撤回)";
-                                                obj.messageOwner.editDate = (int) (System.currentTimeMillis() / 1000);
                                                 break;
                                             }
                                         }
@@ -21145,7 +21143,6 @@ public class MessagesController extends BaseController implements NotificationCe
                                 }
                             }
                         }
-                        getNotificationCenter().postNotificationName(NotificationCenter.messagesDidLoaded, dialogId);
                     } else {
                         getNotificationCenter().postNotificationName(NotificationCenter.messagesDeleted, arrayList, -dialogId, false);
                         if (dialogId == 0) {

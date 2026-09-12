@@ -21183,6 +21183,20 @@ public class MessagesController extends BaseController implements NotificationCe
                         if (!updatedMessages.isEmpty()) {
                             try {
                                 getNotificationCenter().postNotificationName(NotificationCenter.replaceMessagesObjects, targetDialogId, updatedMessages);
+                                // 同时将修改后的消息保存到数据库，这样进入聊天界面时也能显示"(已撤回)"标记
+                                try {
+                                    ArrayList<TLRPC.Message> messagesToSave = new ArrayList<>();
+                                    for (int i = 0; i < updatedMessages.size(); i++) {
+                                        if (updatedMessages.get(i) != null && updatedMessages.get(i).messageOwner != null) {
+                                            messagesToSave.add(updatedMessages.get(i).messageOwner);
+                                        }
+                                    }
+                                    if (!messagesToSave.isEmpty()) {
+                                        getMessagesStorage().putMessages(messagesToSave, true, false, true, 0, 0, 0);
+                                    }
+                                } catch (Exception e) {
+                                    FileLog.e(e);
+                                }
                             } catch (Exception e) {
                                 FileLog.e(e);
                             }

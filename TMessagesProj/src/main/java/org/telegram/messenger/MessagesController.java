@@ -21119,12 +21119,14 @@ public class MessagesController extends BaseController implements NotificationCe
                     }
                     if (antiRevokeEnabled) {
                         // 防撤回功能：不删除消息，只修改消息内容为"(已撤回)"
+                        ArrayList<MessageObject> updatedMessages = new ArrayList<>();
                         if (dialogId == 0) {
                             for (int b = 0, size2 = arrayList.size(); b < size2; b++) {
                                 Integer id = arrayList.get(b);
                                 MessageObject obj = dialogMessagesByIds.get(id);
                                 if (obj != null && obj.messageOwner != null && obj.messageOwner.message != null && !obj.messageOwner.message.contains("(已撤回)")) {
                                     obj.messageOwner.message = obj.messageOwner.message + " (已撤回)";
+                                    updatedMessages.add(obj);
                                 }
                             }
                         } else {
@@ -21136,11 +21138,20 @@ public class MessagesController extends BaseController implements NotificationCe
                                         for (int b = 0, size2 = arrayList.size(); b < size2; b++) {
                                             if (obj.getId() == arrayList.get(b)) {
                                                 obj.messageOwner.message = obj.messageOwner.message + " (已撤回)";
+                                                updatedMessages.add(obj);
                                                 break;
                                             }
                                         }
                                     }
                                 }
+                            }
+                        }
+                        // 防撤回功能：通知UI更新消息内容
+                        if (!updatedMessages.isEmpty()) {
+                            try {
+                                getNotificationCenter().postNotificationName(NotificationCenter.replaceMessagesObjects, dialogId, updatedMessages);
+                            } catch (Exception e) {
+                                FileLog.e(e);
                             }
                         }
                     } else {

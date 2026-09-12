@@ -81,10 +81,10 @@ public class AureliaSettingsActivity extends BaseFragment {
                 try {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/Aurelia5200"));
                     intent.setPackage("com.aurelia.app");
-                    startActivity(intent);
+                    getParentActivity().startActivity(intent);
                 } catch (Exception e) {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/Aurelia5200"));
-                    startActivity(intent);
+                    getParentActivity().startActivity(intent);
                 }
             }
         });

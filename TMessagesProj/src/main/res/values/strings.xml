@@ -1194,7 +1194,7 @@
     <string name="ChooseStickerMyStickerSets">My sticker sets</string>
     <string name="ChooseStickerMyEmojiPacks">My emoji packs</string>
     <string name="AddEmojiPackHeader">Add emoji pack by link</string>
-    <string name="AddGroupEmojiPackHint">All members will be able to use these emoji in the group, even if they don\'t have Telegram Premium.</string>
+    <string name="AddGroupEmojiPackHint">All members will be able to use these emoji in the group, even if they don\'t have Aurelia Premium.</string>
     <string name="AddEmojiPackLinkHint">emojiset</string>
     <!--chat view-->
     <string name="Invisible">invisible</string>
@@ -2475,11 +2475,11 @@
     <string name="LanguageUnsupportedError">There is no such language.</string>
     <string name="LanguageSame">You are already using this language pack (**%1$s**). You can change your language at any time in Settings.</string>
     <string name="LanguageUnknownCustomAlert">Unfortunately, this custom language pack (**%1$s**) doesn\'t contain data for Aurelia Android.</string>
-    <string name="AskAQuestionInfo">Please note that Telegram Support is done by volunteers. We try to respond as quickly as possible, but it may take a while.\n\nPlease take a look at the <![CDATA[<a href=\"https://telegram.org/faq#general-questions\">Telegram FAQ</a>]]>: it has answers to most questions and important tips for <![CDATA[<a href=\"https://telegram.org/faq#troubleshooting\">troubleshooting</a>]]>.</string>
+    <string name="AskAQuestionInfo">Please note that Telegram Support is done by volunteers. We try to respond as quickly as possible, but it may take a while.\n\nPlease take a look at the <![CDATA[<a href=\"https://telegram.org/faq#general-questions\">Aurelia FAQ</a>]]>: it has answers to most questions and important tips for <![CDATA[<a href=\"https://telegram.org/faq#troubleshooting\">troubleshooting</a>]]>.</string>
     <string name="AskButton">Ask a volunteer</string>
-    <string name="TelegramFAQ">Telegram FAQ</string>
-    <string name="TelegramFaq">Telegram FAQ</string>
-    <string name="TelegramFeatures">Telegram Features</string>
+    <string name="TelegramFAQ">Aurelia FAQ</string>
+    <string name="TelegramFaq">Aurelia FAQ</string>
+    <string name="TelegramFeatures">Aurelia Features</string>
     <string name="TelegramFeaturesUrl">https://t.me/TelegramTips</string>
     <string name="AddAccount">Add Account</string>
     <string name="SwitchAccountHint">"Long tap to switch accounts"</string>
@@ -5604,7 +5604,7 @@
     <string name="UnlockPremiumEmoji">Unlock Premium Emoji</string>
     <string name="UnlockPremiumStickers">Unlock Premium Stickers</string>
     <string name="UnlockPremiumReactions">Unlock Premium Reactions</string>
-    <string name="UnlockPremiumReactionsDescription">Unlock additional reactions by subscribing to Telegram Premium.</string>
+    <string name="UnlockPremiumReactionsDescription">Unlock additional reactions by subscribing to Aurelia Premium.</string>
     <string name="SecretChatTimerYears">y</string>
     <string name="IncreaseLimit">Increase Limit</string>
     <string name="LimitReachedPublicLinks">You have reserved too many public links. Try revoking the link from an older group or channel, or upgrade to **Telegram Premium** to double the limit to **%2$d** public links.</string>
@@ -5630,7 +5630,7 @@
     <string name="PremiumPreviewUploadsDescription">Increased upload size from 2Gb to 4Gb per document, unlimited storage overall.</string>
     <string name="PremiumPreviewDownloadSpeed">Faster Download Speed</string>
     <string name="PremiumPreviewDownloadSpeedDescription">No more limits on the speed with which media and documents are downloaded.</string>
-    <string name="PremiumPreviewDownloadSpeedDescription2">Subscribe to Telegram Premium to download media and files at the fastest possible speed.</string>
+    <string name="PremiumPreviewDownloadSpeedDescription2">Subscribe to Aurelia Premium to download media and files at the fastest possible speed.</string>
     <string name="PremiumPreviewNoAds">No Ads</string>
     <string name="PremiumPreviewNoAdsDescription">No more ads in public channels where Telegram sometimes shows ads.</string>
     <string name="PremiumPreviewTags">Tags for Messages</string>
@@ -5656,7 +5656,7 @@
     <string name="SubscribeToPremiumNoPrice">Subscribe</string>
     <string name="SubscribeToPremiumNotAvailable">Subscription not available</string>
     <string name="SubscribeToPremiumOfficialAppNeeded">**Official app needed**</string>
-    <string name="SubscribeToPremiumOfficialAppNeededDescription">You need an official Telegram app to subscribe to **Telegram Premium**.\n\nOnce subscribed, you will be able to use the benefits of Telegram Premium in any apps that support it, including unofficial ones.</string>
+    <string name="SubscribeToPremiumOfficialAppNeededDescription">You need an official Telegram app to subscribe to **Telegram Premium**.\n\nOnce subscribed, you will be able to use the benefits of Aurelia Premium in any apps that support it, including unofficial ones.</string>
     <string name="InstallOfficialApp">Install official app</string>
     <string name="GiftSubscriptionFor">Gift Subscription for %1$s</string>
     <string name="GiftSubscriptionCountFor_one">Gift %1$d Subscription for %2$s</string>
@@ -5665,7 +5665,7 @@
     <string name="PricePerMonth">%1$s / month</string>
     <string name="PricePerMonthMe">%1$s/month</string>
     <string name="PricePerYear">%1$s/year</string>
-    <string name="GiftPremiumListFeaturesAndTerms">You can review the list of features and terms of use for Telegram Premium *here*.</string>
+    <string name="GiftPremiumListFeaturesAndTerms">You can review the list of features and terms of use for Aurelia Premium *here*.</string>
     <string name="GiftPremium">Gift Premium</string>
     <string name="GiftPremiumGifting">Premium Gifting</string>
     <string name="SendAGift">Send a Gift</string>
@@ -5692,7 +5692,7 @@
     <string name="GiftPremiumUsersSearchHint">Search people to gift Premium to...</string>
     <string name="GiftPremiumWillReceiveBoostsPlural_one">You will receive ⚡ **%1$d** boost.</string>
     <string name="GiftPremiumWillReceiveBoostsPlural_other">You will receive ⚡ **%1$d** boosts.</string>
-    <string name="GiftPremiumPrivacyPolicyAndTerms">By gifting Telegram Premium you agree to the **Telegram Terms of Service** and %1$s</string>
+    <string name="GiftPremiumPrivacyPolicyAndTerms">By gifting Aurelia Premium you agree to the **Telegram Terms of Service** and %1$s</string>
     <string name="GiftPremiumPrivacyPolicy">**Privacy Policy**.</string>
     <string name="GiftPremiumChooseRecipientsBtn">Choose Recipients</string>
     <string name="GiftPremiumProceedBtn">Proceed</string>
@@ -5700,10 +5700,10 @@
     <string name="GiftPremiumAboutThisLinkEnd">**Telegram Premium** subscription</string>
     <string name="GiftPremiumWhatsIncluded">What\'s included</string>
     <string name="GiftPremiumEventAdsTitle">Send gifts **to your friends!** 🎄</string>
-    <string name="GiftTelegramPremiumTitle">Gift Telegram Premium</string>
+    <string name="GiftTelegramPremiumTitle">Gift Aurelia Premium</string>
     <string name="GiftTelegramPremiumOrStarsTitle">Gift Premium or Stars</string>
-    <string name="GiftTelegramPremiumDescription">Let **%1$s** enjoy exclusive features of Telegram with **Telegram Premium**.</string>
-    <string name="TelegramPremium">Telegram Premium</string>
+    <string name="GiftTelegramPremiumDescription">Let **%1$s** enjoy exclusive features of Aurelia with **Telegram Premium**.</string>
+    <string name="TelegramPremium">Aurelia Premium</string>
     <string name="TelegramPremiumSubtitle">Go **beyond the limits**, get exclusive features and support us by subscribing to **Telegram Premium**.</string>
     <string name="TelegramPremiumSubscribedTitle">You are all set!</string>
     <string name="TelegramPremiumSubscribedSubtitle">Thank you for subscribing to **Telegram Premium**.\nHere’s what is now unlocked.</string>
@@ -5714,7 +5714,7 @@
     <string name="LimitReachedFileSize">The document cant’t be sent, because it is larger than **%1$s**. You can double this limit to **%2$s** per document by subscribing to **Telegram Premium**.</string>
     <string name="LimitReachedFileSizePremium">The document cant’t be sent, because it is larger than **%1$s**.</string>
     <string name="LimitReachedFileSizeLocked">The document cant’t be sent, because it is larger than **%1$s**. We are working to let you increase this limit in the future.</string>
-    <string name="AboutPremiumTitle">About Telegram Premium</string>
+    <string name="AboutPremiumTitle">About Aurelia Premium</string>
     <string name="AboutPremiumDescription">While the free version of Telegram already gives its users more than any other messaging application, **Telegram Premium** pushes its capabilities even further.</string>
     <string name="AboutPremiumDescription2">**Telegram Premium** is a paid option, because most Premium Features require additional expenses from Telegram to third parties such as data center providers and server manufacturers. Contributions from **Telegram Premium** users allow us to cover such costs and also help Telegram stay free for everyone.</string>
     <string name="PremiumTierAnnualYears_one">%d-Year</string>
@@ -5745,7 +5745,7 @@
     <string name="LimitReachedAccountsPremium">Sorry, you can\'t add more than **%1$d** accounts.</string>
     <string name="PremiumPreviewVoiceToText">Voice-to-Text Conversion</string>
     <string name="PremiumPreviewVoiceToTextDescription">Ability to read the transcript of any incoming voice message.</string>
-    <string name="PremiumPreviewVoiceToTextDescription2">Subscribe to Telegram Premium to be able to convert voice and video messages to text.</string>
+    <string name="PremiumPreviewVoiceToTextDescription2">Subscribe to Aurelia Premium to be able to convert voice and video messages to text.</string>
     <string name="PremiumPreviewAdvancedChatManagement">Advanced Chat Management</string>
     <string name="PremiumStickersShort">Premium</string>
     <string name="PremiumStickers">Premuim Stickers</string>
@@ -5776,10 +5776,10 @@
     <string name="PremiumPreviewAppIcon">Premium App Icon</string>
     <string name="PremiumPreviewAppIconDescription">Choose from a selection of Telegram app icons for your homescreen.</string>
     <string name="UnlockPremiumIcons">Unlock Premium Icons</string>
-    <string name="AboutTelegramPremium">About Telegram Premium</string>
+    <string name="AboutTelegramPremium">About Aurelia Premium</string>
     <string name="AdditionalReactions">Additional Reactions</string>
-    <string name="AdditionalReactionsDescription">Unlock a wider range of reactions on messages by subscribing to Telegram Premium.</string>
-    <string name="PremiumPreviewAppIconDescription2">Unlock a wider range of app icons by subscribing to Telegram Premium.</string>
+    <string name="AdditionalReactionsDescription">Unlock a wider range of reactions on messages by subscribing to Aurelia Premium.</string>
+    <string name="PremiumPreviewAppIconDescription2">Unlock a wider range of app icons by subscribing to Aurelia Premium.</string>
     <string name="PaymentCheckoutAcceptRecurrent">I accept the *Terms of Service* of %1$s.</string>
     <string name="PaymentCheckoutAcceptRecurrentFee">I accept the *Terms of Service*.</string>
     <string name="RevokeLinksAlert">Are you sure you want to revoke these links?\n\nThe groups will become private.</string>
@@ -5789,7 +5789,7 @@
     <string name="RichEditorDraftSaved">Saved Draft.</string>
     <string name="AllWebSessionsTerminated">All websites disconnected.</string>
     <string name="BotCantOpenAttachMenuSameBot">This bot can\'t be opened in the chat with itself.</string>
-    <string name="UnlockPremiumStickersDescription">Unlock this sticker and many more by subscribing to Telegram Premium.</string>
+    <string name="UnlockPremiumStickersDescription">Unlock this sticker and many more by subscribing to Aurelia Premium.</string>
     <string name="LimitReachedPinDialogs">Sorry, you can\'t pin more than %1$d chats to the top. Unpin some that are currently pinned or subscribe to **Telegram Premium** to double the limit to **%2$d** chats.</string>
     <string name="LimitReachedPinDialogsPremium">Sorry, you can\'t pin more than %1$d chats to the top. Unpin some that are currently pinned.</string>
     <string name="LimitReachedPinDialogsLocked">Sorry, you can\'t pin more than %1$d chats to the top. Unpin some that are currently pinned. We are working to let you increase this limit in the future.</string>
@@ -5799,19 +5799,19 @@
     <string name="LastActiveCommunities">Recently active communities</string>
     <string name="ChatsLeaveAlert"><![CDATA[>Are you sure you want to leave the selected chats?]]></string>
     <string name="PremiumPreviewAdvancedChatManagementDescription">Tools to set the default folder, auto-archive and hide new chats from non-contacts.</string>
-    <string name="PremiumPreviewAdvancedChatManagementDescription2">Subscribers of Telegram Premium can set the default folder, auto-archive and hide new chats from non-contacts.</string>
-    <string name="TelegramPremiumUserDialogTitle">**%s** is a subscriber of Telegram Premium.</string>
+    <string name="PremiumPreviewAdvancedChatManagementDescription2">Subscribers of Aurelia Premium can set the default folder, auto-archive and hide new chats from non-contacts.</string>
+    <string name="TelegramPremiumUserDialogTitle">**%s** is a subscriber of Aurelia Premium.</string>
     <string name="TelegramPremiumUserDialogSubtitle">Owners of **Telegram Premium** accounts have exclusive access to multiple additional features.</string>
     <string name="TelegramPremiumUserStatusDialogTitle">%1$s set this emoji from **%2$s** as their current status.</string>
     <string name="TelegramPremiumUserStatusCollectibleDialogTitle">%1$s set this emoji from **%2$s** collection as their current status.</string>
     <string name="TelegramPremiumUserStatusDialogSubtitle">Emoji status is a premium feature. Other features included in **Telegram Premium**:</string>
     <string name="TelegramPremiumUserStatusDefaultDialogTitle">This is %1$s\'s current status.</string>
-    <string name="TelegramPremiumUserGiftedPremiumDialogTitleWithPlural">**%1$s** has gifted you a %2$s subscription for Telegram Premium.</string>
-    <string name="TelegramPremiumUserGiftedPremiumDialogTitleWithPluralSomeone">Someone has gifted you a %1$s subscription for Telegram Premium.</string>
+    <string name="TelegramPremiumUserGiftedPremiumDialogTitleWithPlural">**%1$s** has gifted you a %2$s subscription for Aurelia Premium.</string>
+    <string name="TelegramPremiumUserGiftedPremiumDialogTitleWithPluralSomeone">Someone has gifted you a %1$s subscription for Aurelia Premium.</string>
     <string name="TelegramPremiumUserGiftedPremiumDialogSubtitle">You now have access to additional features.</string>
-    <string name="TelegramPremiumUserGiftedPremiumOutboundDialogTitleWithPlural">You gifted **%1$s** a %2$s subscription for Telegram Premium.</string>
+    <string name="TelegramPremiumUserGiftedPremiumOutboundDialogTitleWithPlural">You gifted **%1$s** a %2$s subscription for Aurelia Premium.</string>
     <string name="TelegramPremiumUserGiftedPremiumOutboundDialogSubtitle">**%1$s** now have access to additional features.</string>
-    <string name="PremiumPreviewNoAdsDescription2">Remove ads such as this one by subscribing to Telegram Premium.</string>
+    <string name="PremiumPreviewNoAdsDescription2">Remove ads such as this one by subscribing to Aurelia Premium.</string>
     <string name="FeaturedStickersPremium">Trending Premium Stickers</string>
     <string name="UnlockPremiumEmojiPack">Unlock %1$s</string>
     <string name="UnlockPremiumEmojiHint">Subscribe to **Telegram Premium** to unlock this emoji.</string>
@@ -5821,7 +5821,7 @@
     <string name="PremiumMore">More</string>
     <string name="Unlock">Unlock</string>
     <string name="Restore">Restore</string>
-    <string name="PremiumPreviewEmojiPack">This emoji pack is available only to subscribers of **Telegram Premium.**</string>
+    <string name="PremiumPreviewEmojiPack">This emoji pack is available only to subscribers of **Aurelia Premium.**</string>
     <string name="AllReactions">All reactions</string>
     <string name="SomeReactions">Some reactions</string>
     <string name="NoReactions">No reactions</string>
@@ -6236,9 +6236,9 @@
     <string name="NoEmojiOrStickersFound">No emoji or stickers found</string>
     <string name="SafetyNetErrorOccurred">An internal error occurred. Please try again later.</string>
     <string name="UpgradePremiumTitle">Upgrade to Premium with a discount of **%1$d%%**</string>
-    <string name="UpgradePremiumMessage">Upgrade to the annual payment plan of Telegram Premium now to enjoy the discount.</string>
+    <string name="UpgradePremiumMessage">Upgrade to the annual payment plan of Aurelia Premium now to enjoy the discount.</string>
     <string name="SaveOnAnnualPremiumTitle">Save on your subscription up to **%1$d%%**</string>
-    <string name="SaveOnAnnualPremiumMessage">Sign up for the annual payment plan for Telegram Premium now to get the discount.</string>
+    <string name="SaveOnAnnualPremiumMessage">Sign up for the annual payment plan for Aurelia Premium now to get the discount.</string>
     <string name="PauseMusicOnRecord">Pause music while recording</string>
     <string name="PauseMusicOnRecordInfo">Pause music when you start recording a video message</string>
     <string name="SetMyProfilePhotoAvatarConstructor">Set My Photo</string>
@@ -6330,7 +6330,7 @@
     <string name="LoginEmailResetTitle">Reset Email</string>
     <string name="LoginEmailResetMessage">You can change your login email if you are logged into Telegram from another device. Otherwise, if you don\'t have access to email %1$s, you can reset this email with an **SMS** code in **%2$s**.</string>
     <string name="LoginEmailResetButton">Reset Login Email</string>
-    <string name="LoginEmailResetPremiumRequiredTitle">Telegram Premium Required</string>
+    <string name="LoginEmailResetPremiumRequiredTitle">Aurelia Premium Required</string>
     <string name="LoginEmailResetPremiumRequiredMessage">Due to the high cost of SMS in your country, you need a **Telegram Premium** account to immediately reset this email via an SMS code.\n\nYou can ask a friend to gift a Premium subscription for your account **%1$s**</string>
     <string name="LoginEmailResetPleaseWait">Resetting email, please wait...</string>
     <string name="DeleteAndBlock">Delete and Block</string>
@@ -6499,7 +6499,7 @@
     <string name="ChatThemeNightSwitchTooltip">Tap to view this theme in the night mode.</string>
     <string name="BotWebAppInstantViewOpen">Open App</string>
     <string name="RestorePremiumHintTitle">Get Premium back with up to **%1$d%%** off</string>
-    <string name="RestorePremiumHintMessage">Your Telegram Premium has recently expired. Tap here to extend it.</string>
+    <string name="RestorePremiumHintMessage">Your Aurelia Premium has recently expired. Tap here to extend it.</string>
     <string name="ReplyPrivately">Reply privately...</string>
     <string name="ReplyToGroupStory">Comment story...</string>
     <string name="SelfStoryTitle">My Story</string>
@@ -6826,8 +6826,8 @@
     <string name="StoryPremiumFormatting">Subscribe to **Telegram Premium** to add links and text formatting to your stories.</string>
     <string name="StoryPremiumWidgets2_other">Subscribe to **Telegram Premium** to add up to %d reactions and tags to a story.</string>
     <string name="CaptionPremiumTitle">Maximum Length Reach</string>
-    <string name="CaptionPremiumSubtitle_other">Increase this limit **%1$d** times to **%2$s** symbols by subscribing to __Telegram Premium.__</string>
-    <string name="ExpiredViewsStubPremiumDescription">To unlock viewers’ lists for expired and saved stories, subscribe to **Telegram Premium.**</string>
+    <string name="CaptionPremiumSubtitle_other">Increase this limit **%1$d** times to **%2$s** symbols by subscribing to __Aurelia Premium.__</string>
+    <string name="ExpiredViewsStubPremiumDescription">To unlock viewers’ lists for expired and saved stories, subscribe to **Aurelia Premium.**</string>
     <string name="LearnMore">Learn More</string>
     <string name="SaveStoryToGalleryPremiumHint">**Subscribe to Premium** to save other people’s unprotected stories to your gallery.</string>
     <string name="PremiumPreviewStories">Upgraded Stories</string>
@@ -6853,7 +6853,7 @@
     <string name="UpgradedStories">Upgraded Stories</string>
     <string name="StealthModeButton">Hide My View</string>
     <string name="StealthModeTitle">Stealth Mode</string>
-    <string name="StealthModePremiumHint">Subscribe to Telegram Premium to hide the fact that you viewed peoples’ stories from them.</string>
+    <string name="StealthModePremiumHint">Subscribe to Aurelia Premium to hide the fact that you viewed peoples’ stories from them.</string>
     <string name="ViewAnonymously">View\nAnonymously</string>
     <string name="HideRecentViews">Hide Recent Views</string>
     <string name="HideRecentViewsDescription">Hide my views in the last 5 minutes.</string>
@@ -6913,7 +6913,7 @@
     <string name="StoryShownBackToToast">%s would be able to see your stories again.</string>
     <string name="SearchImagesType">Type to search.</string>
     <string name="NoViews">No views</string>
-    <string name="StoryViewsPremiumHint">To unlock viewers’ lists for expired and saved  stories, subscribe to **Telegram Premium.**</string>
+    <string name="StoryViewsPremiumHint">To unlock viewers’ lists for expired and saved  stories, subscribe to **Aurelia Premium.**</string>
     <string name="Likes_one">%d like</string>
     <string name="Likes_other">%d likes</string>
     <string name="Reposts_one">%d repost</string>
@@ -6977,7 +6977,7 @@
     <string name="BoostingStoriesByGiftingChannel2">Boost your channel by giving away prizes to your subscribers.</string>
     <string name="BoostingStoriesByGiftingGroup2">Boost your group by giving away prizes to your members.</string>
     <string name="BoostingStoriesByGiftingLink">Get boosts ></string>
-    <string name="BoostingStoriesFeaturesAndTerms">You can review the list of features and terms of use for Telegram Premium **here**.</string>
+    <string name="BoostingStoriesFeaturesAndTerms">You can review the list of features and terms of use for Aurelia Premium **here**.</string>
     <string name="BoostingGiveawayShortStatusParticipating">You are participating in this giveaway.</string>
     <string name="BoostingGiveawayShortStatusNotParticipating">You can\'t participate in this giveaway.</string>
     <string name="BoostingGiveawayShortStatusEnded">The giveaway is ended.</string>
@@ -6994,8 +6994,8 @@
     <string name="BoostingReceivedPrizeDuration">Your prize is a **Telegram Premium** subscription for %s.</string>
     <string name="BoostingReceivedGiftOpenBtn">Open Gift Link</string>
     <string name="BoostingSaveRecipients">Save Recipients</string>
-    <string name="BoostingGiveawayJustStarted">%s just started a giveaway of Telegram Premium subscriptions to its followers.</string>
-    <string name="BoostingGiveawayJustStartedGroup">%s just started a giveaway of Telegram Premium subscriptions to its members.</string>
+    <string name="BoostingGiveawayJustStarted">%s just started a giveaway of Aurelia Premium subscriptions to its followers.</string>
+    <string name="BoostingGiveawayJustStartedGroup">%s just started a giveaway of Aurelia Premium subscriptions to its members.</string>
     <string name="BoostingStarsGiveawayJustStarted_one">%2$s just started a giveaway of %1$d Star to its followers.</string>
     <string name="BoostingStarsGiveawayJustStarted_other">%2$s just started a giveaway of %1$d Stars to its followers.</string>
     <string name="BoostingStarsGiveawayJustStartedGroup_one">%2$s just started a giveaway of %1$d Star to its members.</string>
@@ -7041,8 +7041,8 @@
     <string name="BoostingBoostForChannelsInfo">Subscribers of your channel can **boost** it so that it **levels up** and gets **exclusive features**.</string>
     <string name="BoostingSelectPaidGiveaway">Select a giveaway you already paid for to set it up.</string>
     <string name="BoostingAddChannelOrGroup">Add Group or Channel</string>
-    <string name="BoostingPremium">Telegram Premium</string>
-    <string name="BoostingStars">Telegram Stars</string>
+    <string name="BoostingPremium">Aurelia Premium</string>
+    <string name="BoostingStars">Aurelia Stars</string>
     <string name="BoostingCreateGiveaway">Create Giveaway</string>
     <string name="BoostingShowMoreGifts_one">Show %1$d More Gifted Boosts</string>
     <string name="BoostingShowMoreGifts_other">Show %1$d More Gifted Boosts</string>
@@ -7067,7 +7067,7 @@
     <string name="BoostingIncompleteGiveaway">Incomplete Giveaway</string>
     <string name="BoostingNoRecipient">No recipient</string>
     <string name="BoostingSelectCountry">Select Countries</string>
-    <string name="BoostingTelegramPremiumFor">Telegram Premium for %s</string>
+    <string name="BoostingTelegramPremiumFor">Aurelia Premium for %s</string>
     <string name="BoostingWinnersRandomly">winners are chosen randomly</string>
     <string name="BoostingAwardSpecificUsers">Award Specific Users</string>
     <string name="BoostingChannelWillReceiveBoost_one">this channel will receive %d boost</string>
@@ -7135,10 +7135,10 @@
     <string name="BoostingChooseLimitGiveaway">Choose if you want to limit the giveaway only to those who joined the channel after the giveaway started or to users from specific countries.</string>
     <string name="BoostingChooseLimitGiveawayGroups">Choose if you want to limit the giveaway only to those who joined the group after the giveaway started or to users from specific countries.</string>
     <string name="BoostingDateWhenGiveawayEnds">Date when giveaway ends</string>
-    <string name="BoostingChooseRandom_one">Choose when %d subscriber of your channel will be randomly selected to receive Telegram Premium.</string>
-    <string name="BoostingChooseRandom_other">Choose when %d subscribers of your channel will be randomly selected to receive Telegram Premium.</string>
-    <string name="BoostingChooseRandomGroup_one">Choose when %d members of your group will be randomly selected to receive Telegram Premium.</string>
-    <string name="BoostingChooseRandomGroup_other">Choose when %d members of your group will be randomly selected to receive Telegram Premium.</string>
+    <string name="BoostingChooseRandom_one">Choose when %d subscriber of your channel will be randomly selected to receive Aurelia Premium.</string>
+    <string name="BoostingChooseRandom_other">Choose when %d subscribers of your channel will be randomly selected to receive Aurelia Premium.</string>
+    <string name="BoostingChooseRandomGroup_one">Choose when %d members of your group will be randomly selected to receive Aurelia Premium.</string>
+    <string name="BoostingChooseRandomGroup_other">Choose when %d members of your group will be randomly selected to receive Aurelia Premium.</string>
     <string name="BoostingStarsChooseRandom_one">Choose when %1$d subscriber of your channel will be randomly selected to receive %2$s.</string>
     <string name="BoostingStarsChooseRandom_other">Choose when %1$d subscribers of your channel will be randomly selected to receive %2$s.</string>
     <string name="BoostingStarsChooseRandomGroup_one">Choose when %1$d members of your group will be randomly selected to receive %2$s.</string>
@@ -7160,10 +7160,10 @@
     <string name="BoostingGiveawayShowWinnersHint">Choose whether to make the list of winners public when the giveaway ends.</string>
     <string name="BoostingGiveawayAdditionPrizeHint">Turn this on if you want to give the winners your own prizes in addition to Premium subscriptions.</string>
     <string name="BoostingStarsGiveawayAdditionPrizeHint">Turn this on if you want to give the winners your own prizes in addition to Stars.</string>
-    <string name="BoostingGiveawayAdditionPrizeCountNameHint_one">All prizes: **%1$d** %2$s with Telegram Premium subscriptions for %3$s.</string>
-    <string name="BoostingGiveawayAdditionPrizeCountNameHint_other">All prizes: **%1$d** %2$s with Telegram Premium subscriptions for %3$s.</string>
-    <string name="BoostingGiveawayAdditionPrizeCountHint_one">All prizes: **%1$d** Telegram Premium subscriptions for %2$s.</string>
-    <string name="BoostingGiveawayAdditionPrizeCountHint_other">All prizes: **%1$d** Telegram Premium subscriptions for %2$s.</string>
+    <string name="BoostingGiveawayAdditionPrizeCountNameHint_one">All prizes: **%1$d** %2$s with Aurelia Premium subscriptions for %3$s.</string>
+    <string name="BoostingGiveawayAdditionPrizeCountNameHint_other">All prizes: **%1$d** %2$s with Aurelia Premium subscriptions for %3$s.</string>
+    <string name="BoostingGiveawayAdditionPrizeCountHint_one">All prizes: **%1$d** Aurelia Premium subscriptions for %2$s.</string>
+    <string name="BoostingGiveawayAdditionPrizeCountHint_other">All prizes: **%1$d** Aurelia Premium subscriptions for %2$s.</string>
     <string name="BoostingStarsGiveawayAdditionPrizeCountNameHint_one">All prizes: **%2$d** %3$s with **%1$d Star**.</string>
     <string name="BoostingStarsGiveawayAdditionPrizeCountNameHint_other">All prizes: **%2$d** %3$s with **%1$d Stars**.</string>
     <string name="BoostingStarsGiveawayAdditionPrizeCountHint_one">All prizes: **%1$d Star**.</string>
@@ -7266,8 +7266,8 @@
     <string name="BoostingReassignBoostTextPluralWithLink_one">To boost **%2$s**, reassign a previous boost or %3$s to a friend to get **%1$d** additional boost.</string>
     <string name="BoostingReassignBoostTextPluralWithLink_other">To boost **%2$s**, reassign a previous boost or %3$s to a friend to get **%1$d** additional boosts.</string>
     <string name="BoostingReassignBoostTextLink">**gift Telegram Premium**</string>
-    <string name="BoostingPremiumChristmasSubTitle">Give Telegram Premium for Christmas.</string>
-    <string name="BoostingPremiumChristmasToast">You can gift Telegram Premium later in Settings</string>
+    <string name="BoostingPremiumChristmasSubTitle">Give Aurelia Premium for Christmas.</string>
+    <string name="BoostingPremiumChristmasToast">You can gift Aurelia Premium later in Settings</string>
     <string name="BoostingRemoveBoostFrom">Remove your boost from</string>
     <string name="BoostingAvailableIn">available in %1$s</string>
     <string name="BoostingDurationOfPremium">Duration of Premium subscriptions</string>
@@ -7545,7 +7545,7 @@
     <string name="UserProfileColorReset">Reset Profile Color</string>
     <string name="ChannelProfileColorReset">Reset Profile Color</string>
     <string name="UnlockSimilarChannelsPremium_other">Subscribe to **Telegram Premium** to unlock up to %d similar channels.</string>
-    <string name="ChatMultipleReactionsPromo">You can set multiple reactions with Telegram Premium.</string>
+    <string name="ChatMultipleReactionsPromo">You can set multiple reactions with Aurelia Premium.</string>
     <string name="MoreSimilar">More Channels</string>
     <string name="UnlockSimilar">Unlock more channels</string>
     <string name="MoreSimilarButton">Show More Channels</string>
@@ -7670,7 +7670,7 @@
     <string name="PrivacyLastSeenPremium">Subscribe to Telegram Premium</string>
     <string name="PrivacyLastSeenPremiumInfo">If you subscribe to Premium, you will see other users’ last seen and read time even if you hid yours from them (unless they specifically restricted it).</string>
     <string name="PrivacyLastSeenPremiumForPremium">Subscribed to Telegram Premium</string>
-    <string name="PrivacyLastSeenPremiumInfoForPremium">Because you are a Telegram Premium subscriber, you will see the last seen and read time of all users who are sharing it with you – even if you are hiding yours.</string>
+    <string name="PrivacyLastSeenPremiumInfoForPremium">Because you are a Aurelia Premium subscriber, you will see the last seen and read time of all users who are sharing it with you – even if you are hiding yours.</string>
     <string name="PremiumReadHeader1">Show Your Read Date</string>
     <string name="PremiumReadText1">To see when **%s** read the message, either start showing your own read time...</string>
     <string name="PremiumReadText1Locked">To see when **%s** read the message, start showing your own read time.</string>
@@ -7769,9 +7769,9 @@
     <string name="PremiumPreviewLastSeenDescription">View the last seen and read times of others even if you hide yours.</string>
     <string name="PremiumPreviewMessagePrivacy">Message Privacy</string>
     <string name="PremiumPreviewMessagePrivacyDescription">Restrict people you don\'t know from sending you messages.</string>
-    <string name="TelegramBusiness">Telegram Business</string>
+    <string name="TelegramBusiness">Aurelia Business</string>
     <string name="TelegramBusinessSubtitle">Subscribe to **Telegram Premium** to unlock these additional business features.</string>
-    <string name="TelegramBusinessSubtitleTemp">Turn your account into a **business page** with these additional features.\nThe benefits of Telegram Business are **temporarily included** with Telegram Premium.</string>
+    <string name="TelegramBusinessSubtitleTemp">Turn your account into a **business page** with these additional features.\nThe benefits of Telegram Business are **temporarily included** with Aurelia Premium.</string>
     <string name="TelegramBusinessSubscribedSubtitle">You have now unlocked these additional business features.</string>
     <string name="TelegramBusinessSubscribedSubtitleTemp">You have now unlocked Telegram Business features. These features are **temporarily included** with your Premium Subscription.</string>
     <string name="TelegramBusinessSubtitle2">Turn your account to a business page with these additional features.</string>
@@ -8158,7 +8158,7 @@
     <string name="UserBirthdayHint">🎂 %1$s’s having a birthday today. You can give %1$s **Telegram Premium** as a birthday gift.</string>
     <string name="PrivacyUserTypes">User Types</string>
     <string name="PrivacyPremium">Premium Users</string>
-    <string name="PrivacyPremiumText">all Telegram Premium subscribers</string>
+    <string name="PrivacyPremiumText">all Aurelia Premium subscribers</string>
     <string name="PrivacyMiniapps">Mini Apps &amp; Bots</string>
     <string name="PrivacyMiniappsText">all bots</string>
     <string name="PrivacyPremiumAnd">Premium &amp; %s</string>
@@ -8229,7 +8229,7 @@
     <string name="StoriesDeleted_other">%d stories deleted</string>
     <string name="GraceTitle">⚠️ Your Premium subscription is expiring!</string>
     <string name="GraceMessage">Don’t lose access to exclusive features.</string>
-    <string name="GraceSuggestionTitle">Access to Telegram Premium is expiring!</string>
+    <string name="GraceSuggestionTitle">Access to Aurelia Premium is expiring!</string>
     <string name="GraceSuggestionMessage">⚠️ Unfortunately, your latest payment didn’t come through. To keep your access to exclusive features, please renew the subscription.</string>
     <string name="GraceSuggestionButton">Restore Subscription</string>
     <string name="SearchMyChannels">Channels you joined</string>
@@ -8337,7 +8337,7 @@
     <string name="MessageShowSensitiveContentButton">View Anyway</string>
     <string name="SensitiveContentSettingsToast">You can update the visibility of sensitive media in **Chat Settings > Show 18+ Content**</string>
     <string name="MenuTelegramStars">Your Stars</string>
-    <string name="TelegramStars">Telegram Stars</string>
+    <string name="TelegramStars">Aurelia Stars</string>
     <string name="TelegramStarsInfo2">Buy Stars to unlock content and services\nin miniapps on Telegram. **More about Stars >**</string>
     <string name="TelegramStarsChoose">Choose package</string>
     <string name="TelegramStarsGift">Gift Stars to Friends</string>
@@ -8670,7 +8670,7 @@
     <string name="BrowserSettingsCustomTabs">New Pages within Telegram</string>
     <string name="BrowserSettingsNoCustomTabs">New Tabs in External Browser</string>
     <string name="BrowserSettingsNoCustomTabsInfo">You can choose to open external link without leaving Telegram.</string>
-    <string name="BrowserSettingsEnableInfo">Open links inside Telegram without starting an external browser.</string>
+    <string name="BrowserSettingsEnableInfo">Open links inside Aurelia without starting an external browser.</string>
     <string name="BrowserSettingsCacheClear">Clear Cache</string>
     <string name="BrowserSettingsCookiesClear">Clear Cookies</string>
     <string name="BrowserSettingsCacheClearText">Are you sure you want to clear browser cache%s?</string>
@@ -8865,7 +8865,7 @@
     <string name="BoostUntil">Until</string>
     <string name="Gift2User">Gift %s</string>
     <string name="Gift2Premium">Gift Premium</string>
-    <string name="Gift2PremiumInfo">Give **%s** access to exclusive features with Telegram Premium.</string>
+    <string name="Gift2PremiumInfo">Give **%s** access to exclusive features with Aurelia Premium.</string>
     <string name="Gift2PremiumInfoLink">See Features ></string>
     <string name="Gift2Stars">Send a Gift</string>
     <string name="Gift2StarsInfo">Give **%s** gifts that can be kept on the profile or converted to Stars.</string>
@@ -9645,7 +9645,7 @@
     <string name="ContactInfoUserUpdatedPhoto">User updated photo %s</string>
     <string name="ContactInfoUserUpdatedName">User updated name %s</string>
     <string name="StarsTransactionPostsSearch">Posts Search</string>
-    <string name="StarsTransactionPremiumGift">Telegram Premium</string>
+    <string name="StarsTransactionPremiumGift">Aurelia Premium</string>
     <string name="StarsTransactionPremiumGiftDuration">Duration</string>
     <string name="AccountFrozenAlertTitle">Your account is frozen!</string>
     <string name="AccountFrozenAlertSubtitle">Tap to view details and submit an appeal.</string>
@@ -9666,14 +9666,14 @@
     <string name="SMSFee1TextCountry">Telecom providers in your country (%s) charge Telegram very high prices for SMS.</string>
     <string name="SMSFee2Title">Verification Required</string>
     <string name="SMSFee2Text">Telegram needs to send you an SMS with a verification code to confirm your phone number.</string>
-    <string name="SMSFee3Title">Support via **Telegram Premium >**</string>
-    <string name="SMSFee3Text">Sign up for 1-week Telegram Premium subscription to help cover the SMS costs.</string>
-    <string name="SMSFee3TextDays_one">Sign up for %d day of Telegram Premium subscription to help cover the SMS costs.</string>
-    <string name="SMSFee3TextDays_other">Sign up for %d days of Telegram Premium subscription to help cover the SMS costs.</string>
+    <string name="SMSFee3Title">Support via **Aurelia Premium >**</string>
+    <string name="SMSFee3Text">Sign up for 1-week Aurelia Premium subscription to help cover the SMS costs.</string>
+    <string name="SMSFee3TextDays_one">Sign up for %d day of Aurelia Premium subscription to help cover the SMS costs.</string>
+    <string name="SMSFee3TextDays_other">Sign up for %d days of Aurelia Premium subscription to help cover the SMS costs.</string>
     <string name="SMSFeePurchaseTitle">Sign up for %s</string>
-    <string name="SMSFeePurchaseText">Get Telegram Premium for 1 week</string>
-    <string name="SMSFeePurchaseTextDays_one">Get Telegram Premium for %d day</string>
-    <string name="SMSFeePurchaseTextDays_other">Get Telegram Premium for %d days</string>
+    <string name="SMSFeePurchaseText">Get Aurelia Premium for 1 week</string>
+    <string name="SMSFeePurchaseTextDays_one">Get Aurelia Premium for %d day</string>
+    <string name="SMSFeePurchaseTextDays_other">Get Aurelia Premium for %d days</string>
     <string name="SMSFeeContact">Having issues? **Contact us**</string>
     <string name="PostSuggestionsPriceUpdated_one">un1 now accepts direct messages for %1$d star</string>
     <string name="PostSuggestionsPriceUpdated_other">un1 now accepts direct messages for %1$d stars</string>
@@ -9695,8 +9695,8 @@
     <string name="SearchAdsAbout1Title">Respect Your Privacy</string>
     <string name="SearchAdsAbout1Subtitle">Ads like this do not use your personal information and are based on the search query you entered.</string>
     <string name="SearchAdsAbout2Title">Can Be Removed</string>
-    <string name="SearchAdsAbout2Subtitle">You can turn off ads by subscribing to Telegram Premium. **Subscribe >**</string>
-    <string name="SearchAdsAbout2SubtitlePremium">You can turn off ads by subscribing to Telegram Premium and toggling off Ads. **Remove Ads >**</string>
+    <string name="SearchAdsAbout2Subtitle">You can turn off ads by subscribing to Aurelia Premium. **Subscribe >**</string>
+    <string name="SearchAdsAbout2SubtitlePremium">You can turn off ads by subscribing to Aurelia Premium and toggling off Ads. **Remove Ads >**</string>
     <string name="SearchAdsAboutLaunchTitle">Can I Launch My Ad?</string>
     <string name="SearchAdsAboutLaunchSubtitle">Anyone can create an ad to display in search results for any query. Check out the **Telegram Ad Platform** for details. %1$s</string>
     <string name="SearchAdsAboutLaunchLearnMore">**Learn More >**</string>
@@ -10596,7 +10596,7 @@
     <string name="CocoonFooterLink">https://t.me/cocoon?direct</string>
     <string name="SummaryTitle">AI Summary</string>
     <string name="SummarySubtitle">Tap to see original text</string>
-    <string name="SummaryLimit">Summarize large messages with AI — unlimited in Telegram Premium.</string>
+    <string name="SummaryLimit">Summarize large messages with AI — unlimited in Aurelia Premium.</string>
     <string name="SummaryLimitUpgrade">Upgrade</string>
 
     <string name="StakeDiceTitle">Emoji Stake</string>
@@ -10964,7 +10964,7 @@
 
     <string name="GuestBotFor"> for </string>
 
-    <string name="WearAuthTitle">Use Telegram with WearOS</string>
+    <string name="WearAuthTitle">Use Aurelia with WearOS</string>
     <string name="WearAuthText">Connect your account to WatchOS device\nto use it separately from your watch.</string>
     <string name="WearAuthEmojis">Compare emojis on your watch</string>
     <string name="WearAuthEmojisLogIn">Log In</string>

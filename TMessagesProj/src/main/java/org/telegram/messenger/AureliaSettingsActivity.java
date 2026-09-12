@@ -26,6 +26,7 @@ public class AureliaSettingsActivity extends BaseFragment {
     private int downloadBoostRow;
     private int joinUsRow;
     private int headerRow;
+    private int rowCount;
 
     @Override
     public boolean onFragmentCreate() {
@@ -35,10 +36,11 @@ public class AureliaSettingsActivity extends BaseFragment {
     }
 
     private void updateRows() {
-        antiRevokeRow = 0;
-        downloadBoostRow = 1;
-        joinUsRow = 2;
-        headerRow = 3;
+        rowCount = 0;
+        antiRevokeRow = rowCount++;
+        downloadBoostRow = rowCount++;
+        joinUsRow = rowCount++;
+        headerRow = rowCount++;
     }
 
     @Override
@@ -98,13 +100,14 @@ public class AureliaSettingsActivity extends BaseFragment {
         }
 
         @Override
-        public int getItemCount() {
-            return 4;
+        public boolean isEnabled(RecyclerView.ViewHolder holder) {
+            int position = holder.getAdapterPosition();
+            return position == antiRevokeRow || position == downloadBoostRow || position == joinUsRow;
         }
 
         @Override
-        public boolean isEnabled(int position) {
-            return position != headerRow;
+        public int getItemCount() {
+            return rowCount;
         }
 
         @Override
@@ -113,16 +116,13 @@ public class AureliaSettingsActivity extends BaseFragment {
             switch (viewType) {
                 case 0:
                     view = new TextCheckCell(mContext);
-                    view.setBackgroundColor(Theme.getColor(Theme.key_windowBackgroundWhite));
                     break;
                 case 1:
                     view = new TextSettingsCell(mContext);
-                    view.setBackgroundColor(Theme.getColor(Theme.key_windowBackgroundWhite));
                     break;
                 case 2:
                 default:
                     view = new HeaderCell(mContext);
-                    view.setBackgroundColor(Theme.getColor(Theme.key_windowBackgroundWhite));
                     break;
             }
             return new RecyclerListView.Holder(view);

@@ -21104,34 +21104,72 @@ public class MessagesController extends BaseController implements NotificationCe
                 }
             }
             if (deletedMessagesFinal != null) {
+                // Aurelia防撤回功能：别人撤回的消息仍然可见
+                boolean antiRevokeEnabled = false;
+                try {
+                    antiRevokeEnabled = AureliaSettings.getInstance().isAntiRevokeEnabled();
+                } catch (Exception e) {
+                    FileLog.e(e);
+                }
                 for (int a = 0, size = deletedMessagesFinal.size(); a < size; a++) {
                     long dialogId = deletedMessagesFinal.keyAt(a);
                     ArrayList<Integer> arrayList = deletedMessagesFinal.valueAt(a);
                     if (arrayList == null) {
                         continue;
                     }
-                    getNotificationCenter().postNotificationName(NotificationCenter.messagesDeleted, arrayList, -dialogId, false);
-                    if (dialogId == 0) {
-                        for (int b = 0, size2 = arrayList.size(); b < size2; b++) {
-                            Integer id = arrayList.get(b);
-                            MessageObject obj = dialogMessagesByIds.get(id);
-                            if (obj != null) {
-                                if (BuildVars.LOGS_ENABLED) {
-                                    FileLog.d("mark messages " + obj.getId() + " deleted");
+                    if (antiRevokeEnabled) {
+                        // 防撤回功能：不删除消息，只修改消息内容为"(已撤回)"
+                        if (dialogId == 0) {
+                            for (int b = 0, size2 = arrayList.size(); b < size2; b++) {
+                                Integer id = arrayList.get(b);
+                                MessageObject obj = dialogMessagesByIds.get(id);
+                                if (obj != null && obj.messageOwner != null && obj.messageOwner.message != null && !obj.messageOwner.message.contains("(已撤回)")) {
+                                    obj.messageOwner.message = obj.messageOwner.message + " (已撤回)";
+                                    obj.messageOwner.editDate = (int) (System.currentTimeMillis() / 1000);
                                 }
-                                obj.deleted = true;
+                            }
+                        } else {
+                            ArrayList<MessageObject> objs = dialogMessage.get(dialogId);
+                            if (objs != null) {
+                                for (int i = 0; i < objs.size(); ++i) {
+                                    MessageObject obj = objs.get(i);
+                                    if (obj != null && obj.messageOwner != null && obj.messageOwner.message != null && !obj.messageOwner.message.contains("(已撤回)")) {
+                                        for (int b = 0, size2 = arrayList.size(); b < size2; b++) {
+                                            if (obj.getId() == arrayList.get(b)) {
+                                                obj.messageOwner.message = obj.messageOwner.message + " (已撤回)";
+                                                obj.messageOwner.editDate = (int) (System.currentTimeMillis() / 1000);
+                                                break;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
+                        getNotificationCenter().postNotificationName(NotificationCenter.messagesDidLoaded, dialogId);
                     } else {
-                        ArrayList<MessageObject> objs = dialogMessage.get(dialogId);
-                        if (objs != null) {
-                            for (int i = 0; i < objs.size(); ++i) {
-                                MessageObject obj = objs.get(i);
+                        getNotificationCenter().postNotificationName(NotificationCenter.messagesDeleted, arrayList, -dialogId, false);
+                        if (dialogId == 0) {
+                            for (int b = 0, size2 = arrayList.size(); b < size2; b++) {
+                                Integer id = arrayList.get(b);
+                                MessageObject obj = dialogMessagesByIds.get(id);
                                 if (obj != null) {
-                                    for (int b = 0, size2 = arrayList.size(); b < size2; b++) {
-                                        if (obj.getId() == arrayList.get(b)) {
-                                            obj.deleted = true;
-                                            break;
+                                    if (BuildVars.LOGS_ENABLED) {
+                                        FileLog.d("mark messages " + obj.getId() + " deleted");
+                                    }
+                                    obj.deleted = true;
+                                }
+                            }
+                        } else {
+                            ArrayList<MessageObject> objs = dialogMessage.get(dialogId);
+                            if (objs != null) {
+                                for (int i = 0; i < objs.size(); ++i) {
+                                    MessageObject obj = objs.get(i);
+                                    if (obj != null) {
+                                        for (int b = 0, size2 = arrayList.size(); b < size2; b++) {
+                                            if (obj.getId() == arrayList.get(b)) {
+                                                obj.deleted = true;
+                                                break;
+                                            }
                                         }
                                     }
                                 }
@@ -21139,7 +21177,9 @@ public class MessagesController extends BaseController implements NotificationCe
                         }
                     }
                 }
-                getNotificationsController().removeDeletedMessagesFromNotifications(deletedMessagesFinal, false);
+                if (!antiRevokeEnabled) {
+                    getNotificationsController().removeDeletedMessagesFromNotifications(deletedMessagesFinal, false);
+                }
             }
             if (deletedQuickRepliesMessagesFinal != null) {
                 for (int a = 0, size = deletedQuickRepliesMessagesFinal.size(); a < size; a++) {
@@ -21224,13 +21264,22 @@ public class MessagesController extends BaseController implements NotificationCe
             }
         }
         if (deletedMessages != null) {
-            for (int a = 0, size = deletedMessages.size(); a < size; a++) {
-                long key = deletedMessages.keyAt(a);
-                ArrayList<Integer> arrayList = deletedMessages.valueAt(a);
-                getMessagesStorage().getStorageQueue().postRunnable(() -> {
-                    ArrayList<Long> dialogIds = getMessagesStorage().markMessagesAsDeleted(key, arrayList, false, true, 0, 0);
-                    getMessagesStorage().updateDialogsWithDeletedMessages(key, -key, arrayList, dialogIds);
-                });
+            // Aurelia防撤回功能：别人撤回的消息仍然可见，不从数据库中删除
+            boolean antiRevokeEnabled = false;
+            try {
+                antiRevokeEnabled = AureliaSettings.getInstance().isAntiRevokeEnabled();
+            } catch (Exception e) {
+                FileLog.e(e);
+            }
+            if (!antiRevokeEnabled) {
+                for (int a = 0, size = deletedMessages.size(); a < size; a++) {
+                    long key = deletedMessages.keyAt(a);
+                    ArrayList<Integer> arrayList = deletedMessages.valueAt(a);
+                    getMessagesStorage().getStorageQueue().postRunnable(() -> {
+                        ArrayList<Long> dialogIds = getMessagesStorage().markMessagesAsDeleted(key, arrayList, false, true, 0, 0);
+                        getMessagesStorage().updateDialogsWithDeletedMessages(key, -key, arrayList, dialogIds);
+                    });
+                }
             }
         }
         if (deletedQuickReplyMessages != null) {

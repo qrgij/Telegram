@@ -6,7 +6,7 @@
  * Copyright Nikolai Kudashov, 2013-2020.
  */
 
-package org.telegram.messenger;
+package com.ranyuan.messenger;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -26,12 +26,12 @@ public class BuildVars {
     public static boolean NO_SCOPED_STORAGE = Build.VERSION.SDK_INT <= 29;
     public static String BUILD_VERSION_STRING = BuildConfig.BUILD_VERSION_STRING;
 
-    public static int APP_ID = 30368268;
-    public static String APP_HASH = "7dacccf8b05a6110477ebebb7dbacb5f";
+    public static int APP_ID = 34343785;
+    public static String APP_HASH = "5e04cc15eff79ad35796f2aabdfd346e";
 
     // SafetyNet key for Google Identity SDK, set it to empty to disable
     public static String SAFETYNET_KEY = "AIzaSyDqt8P-7F7CPCseMkOiVRgb1LY8RN1bvH8";
-    public static String PLAYSTORE_APP_URL = "https://play.google.com/store/apps/details?id=org.telegram.messenger";
+    public static String PLAYSTORE_APP_URL = "https://play.google.com/store/apps/details?id=com.ranyuan.messenger";
     public static String HUAWEI_STORE_URL = "https://appgallery.huawei.com/app/C101184875";
     public static String GOOGLE_AUTH_CLIENT_ID = "760348033671-81kmi3pi84p11ub8hp9a1funsv0rn2p9.apps.googleusercontent.com";
 
@@ -41,7 +41,7 @@ public class BuildVars {
     public static boolean IS_BILLING_UNAVAILABLE = false;
 
     // works only on official app ids, disable on your forks
-    public static boolean SUPPORTS_PASSKEYS = true;
+    public static boolean SUPPORTS_PASSKEYS = false;
 
     static {
         if (ApplicationLoader.applicationContext != null) {
@@ -82,7 +82,7 @@ public class BuildVars {
     private static Boolean betaApp;
     public static boolean isBetaApp() {
         if (betaApp == null) {
-            betaApp = ApplicationLoader.applicationContext != null && "org.telegram.messenger.beta".equals(ApplicationLoader.applicationContext.getPackageName());
+            betaApp = ApplicationLoader.applicationContext != null && "com.ranyuan.messenger.beta".equals(ApplicationLoader.applicationContext.getPackageName());
         }
         return betaApp;
     }

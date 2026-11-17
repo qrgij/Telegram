@@ -48,7 +48,7 @@ public class AureliaSettingsActivity extends BaseFragment {
     public View createView(Context context) {
         actionBar.setBackButtonImage(R.drawable.ic_ab_back);
         actionBar.setAllowOverlayTitle(true);
-        actionBar.setTitle("Aurelia功能");
+        actionBar.setTitle("冉爰功能");
         actionBar.setActionBarMenuOnItemClick(new ActionBar.ActionBarMenuOnItemClick() {
             @Override
             public void onItemClick(int id) {
@@ -78,14 +78,7 @@ public class AureliaSettingsActivity extends BaseFragment {
                     ((TextCheckCell) view).setChecked(AureliaSettings.getInstance().isDownloadBoostEnabled());
                 }
             } else if (position == joinUsRow) {
-                try {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/Aurelia5200"));
-                    intent.setPackage("com.aurelia.app");
-                    getParentActivity().startActivity(intent);
-                } catch (Exception e) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/Aurelia5200"));
-                    getParentActivity().startActivity(intent);
-                }
+                // 冉爰：已移除外部频道链接
             }
         });
         frameLayout.addView(listView, LayoutHelper.createFrame(LayoutHelper.MATCH_PARENT, LayoutHelper.MATCH_PARENT));
